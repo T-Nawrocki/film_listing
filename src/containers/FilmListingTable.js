@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Header from '../components/Header';
 
 class FilmListingTable extends Component {
   state = { 
@@ -33,7 +34,7 @@ class FilmListingTable extends Component {
   render() { 
     return ( 
       <>
-        <h1>FilmListingTable</h1>
+        <Header />
       </>
      );
   }
