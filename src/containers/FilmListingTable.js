@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import FilmList from '../components/FilmList';
 import Header from '../components/Header';
 
 class FilmListingTable extends Component {
+  
   state = { 
     films: [
       {
@@ -21,7 +23,8 @@ class FilmListingTable extends Component {
       },
       {
         id: 4,
-        name: "The Lego Movie 2: The Second Part", url: "https://www.imdb.com/title/tt3513498/?ref_=rlm"
+        name: "The Lego Movie 2: The Second Part", 
+        url: "https://www.imdb.com/title/tt3513498/?ref_=rlm"
       },
       {
         id: 5,
@@ -35,6 +38,7 @@ class FilmListingTable extends Component {
     return ( 
       <>
         <Header />
+        <FilmList films ={this.state.films}/>
       </>
      );
   }
