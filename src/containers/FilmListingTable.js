@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import FilmList from '../components/FilmList';
+import FooterButton from '../components/FooterButton';
 import Header from '../components/Header';
 
 class FilmListingTable extends Component {
@@ -39,6 +40,7 @@ class FilmListingTable extends Component {
       <>
         <Header />
         <FilmList films ={this.state.films}/>
+        <FooterButton />
       </>
      );
   }
